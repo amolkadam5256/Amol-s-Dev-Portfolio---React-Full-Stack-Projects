@@ -1,0 +1,75 @@
+/* Custom styles for animations */
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+* {
+    font-family: 'Play', sans-serif;
+}
+
+.container {
+    width: 500px; /* Tailwind doesn't have a direct utility for this, you can use a custom class */
+}
+
+.line {
+    border-bottom: 3px solid red;
+    width: 200px;
+}
+
+/* Custom animations */
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Tailwind CSS Utility Classes for Animation */
+.animate-slide-right {
+    animation: slide-right 3s ease forwards;
+}
+
+.animate-slide-left {
+    animation: slide-left 3s ease forwards;
+}
+
+/* FadeIn */
+.line {
+    animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* man run to c butterfly  */
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(100%); /* End off-screen to the right */
+    }
+}
+
+.animate-scroll {
+    animation: scroll 15s linear forwards; /* 'forwards' keeps the last frame */
+}
+
+
+

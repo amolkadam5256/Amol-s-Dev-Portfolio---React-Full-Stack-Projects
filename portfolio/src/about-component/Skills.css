@@ -1,0 +1,26 @@
+.icon-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 1.1s;
+  /* transform: scale(0.9); */
+  z-index: -1;
+}
+
+.icon-box::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.icon-box:hover {
+  box-shadow: 0 0 20px #ffee10;
+  text-shadow: 0 0 20px #ffee10;
+  border: 5px solid #ffee10;
+  border-radius: 50%;
+}
+
+
