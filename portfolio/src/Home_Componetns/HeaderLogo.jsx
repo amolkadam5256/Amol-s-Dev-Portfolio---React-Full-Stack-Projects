@@ -19,7 +19,7 @@ const HeaderLogo = () => {
             <div className='md:mr-20 mr-16 relative z-40'>
                 <Link to="/hire_me">
                     <button
-                        className='bg-[#060606] px-5 md:px-11 sm:px-9 py-2 md:py-3 rounded-full border-white text-[#FAFAFA] hover:text-[#FAFAFA] hover:bg-[#9B9B9B] border-4 md:text-[14px] font-bold transform transition-transform duration-300 animate-pulse-slow'
+                        className='bg-[#060606] px-5 md:px-11 sm:px-9 py-2 md:py-3 rounded-full border-white text-[#FAFAFA] hover:text-[#FAFAFA] hover:bg-[#9B9B9B] border-4 md:text-[14px] font-bold transform transition-transform duration-300 animate-pulse-slow '
                         aria-label="Hire Me"
                     >
                         Hire Me
