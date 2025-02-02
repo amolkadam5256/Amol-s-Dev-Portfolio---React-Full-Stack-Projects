@@ -47,6 +47,7 @@ import earth from './earth.mp4';
 import moon from './moon.mp4';
 import DarkMoon from './DarkMoon.mp4';
 import time from './time.png';
+import ProfileAmol from './ProfileAmol.jpeg';
 
 export const assets = {
   HeroImg,
@@ -98,6 +99,7 @@ export const assets = {
   DarkMoon,
   earth,
   time,
+  ProfileAmol,
 };
 
 

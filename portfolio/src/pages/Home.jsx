@@ -4,6 +4,8 @@ import HomeCopyWrite from '../Home_Componetns/HomeCopyWrite';
 import Slogan from '../Home_Componetns/Slogan';
 import StarAnimation from '../Home_Componetns/StarAnimation';
 import LaptopModel from '../Home_Componetns/laptopModel';
+import Accordion from '../Home_Componetns/Accordion';
+import Achievements from '../Home_Componetns/Achievements';
 
 const Home = () => {
 
@@ -20,7 +22,13 @@ const Home = () => {
       <Slogan />
 
       {/* Laptop Model section */}
-      <LaptopModel/>
+      {/* <LaptopModel /> */}
+
+      {/*Achievements */}
+      <Achievements />
+
+      {/* Accordion */}
+      <Accordion />
     </div>
   );
 };
