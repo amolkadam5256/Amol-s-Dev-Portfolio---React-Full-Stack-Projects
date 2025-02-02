@@ -1,31 +1,28 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Hero from '../Home_Componetns/Hero'
-import HomeCopyWrite from '../Home_Componetns/HomeCopyWrite'
-import Slogan from '../Home_Componetns/Slogan'
-import StarAnimation from '../Home_Componetns/StarAnimation'
-import Demo from '../Demo'
+import React from 'react';
+import Hero from '../Home_Componetns/Hero';
+import HomeCopyWrite from '../Home_Componetns/HomeCopyWrite';
+import Slogan from '../Home_Componetns/Slogan';
+import StarAnimation from '../Home_Componetns/StarAnimation';
+import LaptopModel from '../Home_Componetns/laptopModel';
 
 const Home = () => {
+
   return (
-    <>
-      <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden">
+      {/* Hero section */}
+      <StarAnimation />
+      <Hero />
 
-        {/* Hero section  */}
-        <StarAnimation />
-        <Hero />
+      {/* Copy Write text section */}
+      <HomeCopyWrite />
 
-        {/* copy Write text section */}
-        <HomeCopyWrite />
+      {/* Slogan section */}
+      <Slogan />
 
-        {/* Slogan section */}
-        <Slogan />
+      {/* Laptop Model section */}
+      <LaptopModel/>
+    </div>
+  );
+};
 
-      </div>
-      <Demo />
-    </>
-
-  )
-}
-
-export default Home  
+export default Home;

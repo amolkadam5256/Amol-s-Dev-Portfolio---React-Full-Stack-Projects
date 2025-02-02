@@ -189,7 +189,7 @@
 
 /* =================================== */
 
-.text-custome-bg{
+.text-custome-bg {
     background-image: url('./assets/images/text_bg.mp4');
     background-size: cover, 50px 50px;
     background-repeat: no-repeat;
@@ -364,4 +364,47 @@ model-viewer {
         border-radius: 50px;
         padding: 1.5rem 4rem;
     }
+}
+
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* Milky Glass Animation */
+.milky-glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass background */
+    backdrop-filter: blur(5px); /* Apply initial blur effect */
+    transition: backdrop-filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0.8; /* Semi-transparent */
+    border-radius: 15px; /* Rounded corners for the glass effect */
+}
+
+/* Hover effect for Milky Glass */
+.milky-glass:hover {
+    backdrop-filter: blur(15px); /* Increased blur on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Continuous Rotation Animation: 360 degrees per 10 seconds */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply continuous rotation */
+.rotate-animation {
+    animation: rotateAnimation 100s linear infinite;
+}
+
+/* Optional: Add focus effect */
+.milky-glass:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Optional glow effect */
 }

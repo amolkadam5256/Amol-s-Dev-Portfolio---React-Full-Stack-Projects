@@ -43,6 +43,10 @@ import swmming from './swmming.png';
 import wave from './wave.svg';
 import Waking_man from './Waking_man.gif';
 import text_bg from './text_bg.mp4';
+import earth from './earth.mp4';
+import moon from './moon.mp4';
+import DarkMoon from './DarkMoon.mp4';
+import time from './time.png';
 
 export const assets = {
   HeroImg,
@@ -89,7 +93,11 @@ export const assets = {
   swmming,
   wave,
   Waking_man,
-  text_bg
+  text_bg,
+  moon,
+  DarkMoon,
+  earth,
+  time,
 };
 
 
