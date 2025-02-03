@@ -15,7 +15,7 @@ const Achievements = () => {
         <div className="bg-white relative mx-auto my-20">
             <div
                 className="bg-black py-12 px-6 text-center rounded-lg shadow-md max-w-5xl mx-auto py-20"
-                data-aos="fade-up"
+                data-aos="zoom-in-up"
                 data-aos-duration="1200"
             >
                 <h2 className="text-3xl font-bold text-white" data-aos="fade-down">
@@ -23,7 +23,7 @@ const Achievements = () => {
                 </h2>
                 <p
                     className="text-gray-300 mt-2 max-w-2xl mx-auto"
-                    data-aos="fade-up"
+                    data-aos="zoom-in-up"
                     data-aos-delay="100"
                 >
                     We take pride in our journey and accomplishments. Here are some highlights of our success and milestones achieved over the years.

@@ -1,13 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Pencial from './Pencial';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+
 
 const SelfIntro = () => {
     return (
         <>
             <div className="bg-black flex flex-col md:flex-row w-full md:pt-10 py-10 mb-1">
                 {/* Left Column */}
-                <div className="flex-1 md:pl-10 pl-3 md:py-10 order-2 md:order-1 w-full md:w-1/2 text-white">
+                <div className="flex-1 md:pl-10 pl-3 md:py-10 order-2 md:order-1 w-full md:w-1/2 text-white" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    data-aos-iteration="infinite">
                     <p className='py-2'>Hello, my name is Amol Tukaram Kadam. I am a passionate full-stack developer and Java developer currently pursuing my B.Sc. in Computer Science at Yashwantrao Mohite College in Pune. As I am in my third year of studies, I am actively seeking a full-stack developer role or an internship to enhance my skills and gain valuable real-world experience in a corporate setting. I am eager to apply my knowledge and contribute to innovative projects while continuing to learn and grow in the field.</p>
 
                     <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quo modi ipsa officia iste dolores inventore?</p>
@@ -18,7 +24,10 @@ const SelfIntro = () => {
                 </div>
 
                 {/* Right Column */}
-                <div className="flex-1 relative flex md:justify-center justify-start items-center order-1 md:order-2 w-full md:w-1/2">
+                <div className="flex-1 relative flex md:justify-center justify-start items-center order-1 md:order-2 w-full md:w-1/2" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    data-aos-iteration="infinite">
 
                     <div className='absolute 
                                     sm:right-44 sm:top-28

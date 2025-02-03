@@ -1,8 +1,9 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import assets from '../assets/images/assets';
 import { FaWindowClose } from "react-icons/fa";
 import { MdOutlineZoomOutMap } from "react-icons/md";
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 // Data array to hold the image sources, titles, descriptions, and other data
 const images = [
@@ -19,6 +20,14 @@ const CertificationContent = () => {
     const [zoomedIndex, setZoomedIndex] = useState(null);  // Track zoomed image index
     const [isModalOpen, setIsModalOpen] = useState(false);  // Control modal visibility
     const [modalImage, setModalImage] = useState(null);  // Track the image for the modal
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,      // Animation triggers multiple times on scroll
+            easing: 'ease-in-out',
+        }); // Initialize AOS with animation duration
+    }, []);
 
     // Handle single click to zoom in
     const handleClick = (index) => {
@@ -41,7 +50,7 @@ const CertificationContent = () => {
     return (
         <div className='pb-10'>
             {/* Image Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-12 gap-10  md:mx-20 mx-10 py-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-12 gap-10 md:mx-20 mx-10 py-10">
                 {images.map((image, index) => (
                     <div
                         key={index}
@@ -50,8 +59,10 @@ const CertificationContent = () => {
                         onMouseLeave={() => setHoveredIndex(null)}
                         onClick={() => handleClick(index)}  // Single click to zoom
                         onDoubleClick={handleDoubleClick}   // Double click to reset zoom
+                        data-aos="fade-up" // AOS animation for fade-in effect
+                        data-aos-delay={`${index * 100}`} // Stagger animations
                     >
-                        <div className="inline-flex justify-center items-center overflow-hidden ">
+                        <div className="inline-flex justify-center items-center overflow-hidden">
                             <img
                                 src={image.src}
                                 alt={image.alt}
@@ -72,8 +83,6 @@ const CertificationContent = () => {
                             <h2 className="text-xl font-semibold">{image.title}</h2>
                             <p className="text-sm mt-2">{image.description}</p>
                         </div>
-
-
                     </div>
                 ))}
             </div>
