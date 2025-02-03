@@ -62,7 +62,7 @@ const BackToTopButton = () => {
                 onClick={scrollToTop}
                 className={`${
                     isVisible ? "opacity-100 visible" : "opacity-0 invisible"
-                } fixed bottom-8 right-8 bg-gray-400  hover:bg-gray-700 active:bg-gray-900 rounded-full w-12 h-12 flex items-center justify-center transition-opacity duration-500`}
+                } fixed bottom-8 right-8 bg-gray-400  hover:bg-gray-700 active:bg-gray-900 rounded-full w-12 h-12 flex items-center justify-center transition-opacity duration-500 z-50`}
                 href="#top"
             >
                 {/* React Icon */}

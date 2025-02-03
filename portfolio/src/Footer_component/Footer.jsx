@@ -9,7 +9,7 @@ const Footer = () => {
         AOS.init({
             duration: 1000, // Animation duration
             easing: 'ease-in-out', // Animation easing
-            once: true, // Only trigger once when scrolled into view
+            once: false, // Only trigger once when scrolled into view
         });
     }, []);
 

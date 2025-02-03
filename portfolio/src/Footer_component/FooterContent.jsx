@@ -7,17 +7,17 @@ import 'aos/dist/aos.css';
 
 const FooterContent = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 700 });
   }, []);
 
   return (
     <footer className="mt-16 border-t-2 border-white pt-16">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-6">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-6 ">
 
         {/* About Us Section */}
         <div className="text-center sm:text-left" data-aos="fade-up">
           <p className="text-lg font-medium text-white">About Us</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Company History", "Meet the Team", "Employee Handbook", "Careers"].map(item => (
               <li key={item}>
                 <a className="text-white transition hover:text-red-300" href="#">
@@ -31,7 +31,7 @@ const FooterContent = () => {
         {/* Our Services Section */}
         <div className="text-center sm:text-left" data-aos="fade-up" data-aos-delay="200">
           <p className="text-lg font-medium text-white">Our Services</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Web Development", "Web Design", "Marketing", "Google Ads"].map(item => (
               <li key={item}>
                 <a className="text-white transition hover:text-red-300" href="#">
@@ -45,7 +45,7 @@ const FooterContent = () => {
         {/* Resources Section */}
         <div className="text-center sm:text-left" data-aos="fade-up" data-aos-delay="400">
           <p className="text-lg font-medium text-white">Resources</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Online Guides", "Conference Notes", "Forum", "Downloads", "Upcoming Events"].map(item => (
               <li key={item}>
                 <a className="text-white transition hover:text-red-300" href="#">
@@ -59,7 +59,7 @@ const FooterContent = () => {
         {/* Helpful Links Section */}
         <div className="text-center sm:text-left" data-aos="fade-up" data-aos-delay="600">
           <p className="text-lg font-medium text-white">Helpful Links</p>
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-8 space-y-4 text-sm ml-2">
             {["FAQs", "Support", "Live Chat"].map(item => (
               <li key={item}>
                 <a className="text-white transition hover:text-red-300" href="#">
@@ -96,7 +96,7 @@ const FooterContent = () => {
       {/* Copyright and Social Media Section */}
       <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
         <p className="text-center text-sm text-white sm:text-left">
-          &copy; 2022. All rights reserved.
+          &copy; {new Date().getFullYear()}. All rights reserved.
         </p>
 
         <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
