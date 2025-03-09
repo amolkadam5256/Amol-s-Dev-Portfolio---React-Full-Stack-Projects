@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.contact-link {
+    @apply flex items-center gap-2  hover:text-blue-400 transition-all duration-300;
+  }
+
+  
+
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar */
+}
+
+/* For other browsers */
+.no-scroll {
+    overflow: scroll;
+    /* Allows scrolling without visible scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* btn css animation  */
+
+@keyframes pulse-slow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 2s infinite;
+}
+
+
+/* ?  fonts  */
+
+
+
+@font-face {
+    font-family: mader-font;
+    src: url('../src/assets/fonts/madefor_font.woff2');
+    /* src: url(./assets/madefor_font.woff2); */
+}
+
+@font-face {
+    font-family: anzo1;
+    src: url('./assets/fonts/anzo_1.woff2');
+    /* src: url(./assets/anzo_1.woff2); */
+
+}
+
+@font-face {
+    font-family: anzo2;
+    src: url('./assets/fonts/anzo_2.woff2');
+    /* src: url(./assets/anzo_2.woff2); */
+
+}
+
+@font-face {
+    font-family: anzo3;
+    src: url('./assets/fonts/anzo_3.woff2');
+    /* src: url(./assets/anzo_3.woff2); */
+
+}
+
+@font-face {
+    font-family: anzo4;
+    src: url('./assets/fonts/anzo_4.woff2');
+    /* src: url(./assets/anzo_4.woff2); */
+
+}
+
+@font-face {
+    font-family: anzo5;
+    src: url('./assets/fonts/anzo_4.woff2');
+    /* src: url(./assets/anzo_5.woff2); */
+
+}
+
+@font-face {
+    font-family: fontlogo;
+    src: url('./assets/fonts/font_name.otf');
+    /* src: url(./assets/font_name.otf); */
+
+}
+
+
+@font-face {
+    font-family: 'Waterlily';
+    src: url('./assets/fonts/waterlily.regular.ttf') format('truetype');
+    /* src: url('./assets/waterlily.regular.ttf') format('truetype'); */
+}
+
+
+/* Majored-DemoBlack */
+/* all fonts  */
+
+@font-face {
+    font-family: 'Majored-DemoBlack';
+    src: url('./assets/fonts/Majored-DemoBlack.otf');
+    src: url('./assets/fonts/Majored-DemoBlack.ttf');
+    /* src: url('./assets/waterlily.regular.ttf') format('truetype'); */
+}
+
+
+@font-face {
+    font-family: 'Majored-DemoBold';
+    src: url('./assets/fonts/Majored-DemoBold.otf');
+    src: url('./assets/fonts/Majored-DemoBold.ttf');
+}
+
+
+@font-face {
+    font-family: 'Majored-DemoLight';
+    src: url('./assets/fonts/Majored-DemoLight.otf');
+    src: url('./assets/fonts/Majored-DemoLight.ttf');
+}
+
+
+@font-face {
+    font-family: 'Majored-DemoRegular';
+    src: url('./assets/fonts/Majored-DemoRegular.otf');
+    src: url('./assets/fonts/Majored-DemoRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Majored-DemoThin';
+    src: url('./assets/fonts/Majored-DemoThin.otf');
+    src: url('./assets/fonts/Majored-DemoThin.ttf');
+}
+
+@font-face {
+    font-family: 'Race-Sport';
+    src: url('./assets/fonts/Race-Sport.ttf');
+}
+
+@font-face {
+    font-family: 'Moonscape';
+    src: url('./assets/fonts/Moonscape.otf');
+}
+
+
+
+
+
+/* Herro or main page baground img  */
+
+
+.custom-bg {
+    @apply bg-center bg-no-repeat;
+    background: url('../src/assets/images/mob_bg.gif');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center, bottom left;
+    background-attachment: scroll;
+}
+
+
+
+@media (min-width:768px) {
+    .custom-bg {
+        background-image: url('../src/assets/images/home_bg.png');
+        background-size: cover, 50px 50px;
+        background-repeat: no-repeat;
+        background-position: center, top right;
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-bg {
+        background-image: url('../src/assets/images/home_bg.png');
+        background-size: cover, 50px 50px;
+        background-repeat: no-repeat;
+        background-position: center, bottom left;
+        background-attachment: scroll;
+    }
+}
+
+/* =================================== */
+
+.text-custome-bg {
+    background-image: url('./assets/images/text_bg.mp4');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center, bottom left;
+    background-attachment: scroll;
+}
+
+
+.about-bannerimg {
+    background-image: url('./assets/images/about_bannerbg.png');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-blend-mode: overlay;
+}
+
+.custom-gif {
+    background-image: url('./assets/images/gifbg.gif');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-blend-mode: overlay;
+}
+
+.post-1 {
+    background-image: url('./assets/images/post_1.png');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-blend-mode: overlay;
+}
+
+
+
+.wave {
+    background-image: url('../src/assets/images/wave.svg');
+    background-size: cover, 50px 50px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, top left;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-blend-mode: overlay;
+}
+
+
+
+/* contact laptop model */
+
+
+model-viewer {
+    /* margin-top:-30px; */
+    height: 100%;
+    width: 100%;
+}
+
+.reset-button {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    filter: drop-shadow(1px 1px 0px #ffa500);
+    /* Tailwind CSS does not have drop-shadow with a specific color */
+}
+
+
+
+/* Download CV css */
+
+
+.DownloadCV {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.radio-btn {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.DownloadCV a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 4rem;
+    background: linear-gradient(90deg, #ffffff 50%, #6366f1 50%) no-repeat;
+    background-position: right center;
+    background-size: 200% 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.DownloadCV a:hover,
+.radio-btn:hover+a {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.DownloadCV a:active {
+    box-shadow: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.open {
+    display: none;
+}
+
+.radio-btn:checked~a {
+    animation: loading 5s linear forwards 1;
+}
+
+.radio-btn:checked+.download {
+    display: none;
+}
+
+.radio-btn:checked~.open {
+    display: block;
+}
+
+@keyframes loading {
+    0% {
+        height: 100%;
+        padding: 20px;
+        background-position: right center;
+        color: transparent;
+        box-shadow: none;
+        pointer-events: none;
+    }
+
+    2% {
+        height: 5px;
+        padding: 0 20px;
+        color: transparent;
+        pointer-events: none;
+    }
+
+    95% {
+        height: 5px;
+        padding: 0 20px;
+        background-position: left center;
+        color: transparent;
+        pointer-events: none;
+    }
+
+    100% {
+        height: 100%;
+        background-position: left center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        z-index: 4;
+        color: black;
+        pointer-events: auto;
+        width: 100%;
+        border-radius: 50px;
+        padding: 1.5rem 4rem;
+    }
+}
+
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* Milky Glass Animation */
+.milky-glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass background */
+    backdrop-filter: blur(5px); /* Apply initial blur effect */
+    transition: backdrop-filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0.8; /* Semi-transparent */
+    border-radius: 15px; /* Rounded corners for the glass effect */
+}
+
+/* Hover effect for Milky Glass */
+.milky-glass:hover {
+    backdrop-filter: blur(15px); /* Increased blur on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Continuous Rotation Animation: 360 degrees per 10 seconds */
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply continuous rotation */
+.rotate-animation {
+    animation: rotateAnimation 100s linear infinite;
+}
+
+/* Optional: Add focus effect */
+.milky-glass:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Optional glow effect */
+}
+
